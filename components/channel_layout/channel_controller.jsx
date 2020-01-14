@@ -69,8 +69,8 @@ export default class ChannelController extends React.Component {
                 <SystemNotice/>
 
                 <div className='container-fluid'>
-                    <SidebarRight/>
-                    <SidebarRightMenu teamType={this.props.teamType}/>
+                    {/*<SidebarRight/>*/}
+                    {/*<SidebarRightMenu teamType={this.props.teamType}/>*/}
                     <Route component={TeamSidebar}/>
                     <Route component={Sidebar}/>
                     {!this.props.fetchingChannels && <Route component={CenterChannel}/>}
